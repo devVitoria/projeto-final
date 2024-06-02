@@ -1,0 +1,60 @@
+th{
+    background-color: rgb(153, 43, 60);
+    font-size: 25px;
+    border-radius:15px;
+    color: white;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+    padding: 16px;
+}
+
+th:hover{
+    background-color: rgb(177, 76, 51);
+    font-size: 28px;
+}
+td{
+color:antiquewhite;
+font-size: 30px;
+
+text-align: center;
+}
+
+
+
+img {
+    width: 200px;
+    
+}
+body{
+    background-color: rgb(24, 15, 15);
+}
+td:hover{
+    font-size:39px;
+    color:rgb(255, 255, 255);
+    
+    
+}
+
+.adccart{
+    background-color: rgb(196, 12, 12);
+    border-radius: 15px;
+    font-size: 50px;
+
+    
+}
+.adccart:hover{
+
+    font-size: 60px;
+    transition: 0.3s;
+}
+table{
+    width: 100%;
+}
+.price{
+    color:green;
+    font-size: 29px;
+    
+}
+.name{
+    font-size: 35px;
+}

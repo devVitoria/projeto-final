@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    /* page 1 */
+}
+
+.um {
+    height: 100%;
+    background-color: rgb(114, 113, 116);
+
+
+}
+
+.logo {
+    width: 100%;
+    text-align: start;
+    font-size: 55px;
+    color: rgb(10, 8, 8);
+    text-shadow: rgb(0, 0, 0) 5px 12;
+
+}
+
+nav {
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    display: inline;
+    font-size: 45px;
+    text-decoration: underline rgb(0, 0, 0);
+
+}
+
+li a {
+    color: black;
+}
+
+.minhafoto img {
+    width: 350px;
+    height: 370px;
+    align-self: end;
+    margin-bottom: 20px;
+
+}
+
+.ajuste {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+
+}
+
+
+main {
+    padding: 20px;
+    margin-bottom: 20px;
+    height: 100%;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 64px auto;
+
+}
+
+section div {
+    flex: 1;
+
+}
+
+.secaodois {
+    display: block;
+    font-size: 20px;
+
+
+}
+
+.separador {
+    background-color: rgb(29, 28, 28);
+    width: 50%;
+}
+
+.pai {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.separadordois {
+    background-color: rgb(29, 28, 28);
+    width: 50%;
+}
+
+.secaodois h1 {
+    color: rgb(53, 51, 51);
+    text-decoration: underline;
+    margin-bottom: 5px;
+
+}
+
+
+.secaotres {
+    display: block;
+    text-align: end;
+    font-size: 25px;
+}
+
+.secaotres h1,
+.secaodois h1 {
+    color: rgb(0, 0, 0);
+    text-decoration: underline white;
+    margin-bottom: 5px;
+
+}
+
+.secaodois h1 {
+    font-size: 35px;
+}
+
+.sobremim {
+    text-align: center;
+    max-width: 600px;
+
+}
+
+.sobremim p {
+    margin-right: -30px;
+}
+
+.sobremim p,
+.sobremim2 p {
+    text-align: justify;
+    max-width: 400px;
+    font-size: 20px;
+}
+
+.sobremim2 {
+    text-align: center;
+    max-width: 600px;
+    margin-top: 20px;
+
+
+
+}
+
+.projeto{
+    font-size: 35px;
+    text-decoration: underline white;
+
+}
+
+footer {
+    background-color: antiquewhite;
+    height: 70px;
+    background-image: url(./imgstrabalho/fundologo.webp);
+    opacity: 0.4;
+    bottom: 0;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: black -1px 0;
+
+}
+
+
+
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    font-size: 22px;
+}
+
+.voltar {
+    background-color: rgb(147, 137, 148);
+    border: rgb(72, 74, 88) solid 2px;
+    color: rgb(0, 0, 0);
+
+}
+
+.nivel {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    align-items: center;
+
+}
+
+.bolinhanivelpintada {
+    background-color: rgb(255, 255, 255);
+}
+
+/* parte 2 */
+
+.pagetres {
+    display: flex;
+    font-size: 65px;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: underline white;
+    margin-bottom: 65px;
+
+}
+
+form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+    
+
+}
+
+.field {
+    max-width: 1000px;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 55px;
+    gap: 30px;
+    
+
+}
+
+
+
+
+
+.formmensagem {
+    align-items: center;
+    margin-top: 200px;
+    width: 100%;
+    height: 100%;
+
+}
+
+#envio {
+    background-color: rgb(53, 53, 66);
+    font-size: 30px;
+    width: 50%;
+    color: white;
+    display: block;
+    align-self: center;
+}
+
+.fundo3 {
+    background-color: rgb(114, 113, 116);
+}
+
+form label {
+    color: rgb(7, 6, 7);
+}
+
+form input,
+textarea {
+    background-color: rgb(174, 169, 177);
+    width: 50%;
+    height: 55px;
+
+}
+
+form ::placeholder {
+    color: black;
+    font-size: 22px;
+}
+
+#envio {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.titulo2 {
+    font-family: "Sedan SC", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.principal2 {
+    min-height: 100vh;
+
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="trabalho.css" rel="stylesheet" />
+
+    <title>Sobre mim | Page3</title>
+</head>
+
+<body class="fundo3">
+    <main class="principal2">
+    <div><a class="voltar" href="./index.html">Home</a></div>
+
+    <h1 class="titulo2 pagetres">Entre em contato comigo!</h1>
+    <div>
+        <form>
+            <div class="field">
+    
+                <label for="nome">Nome </label>
+                <input type="text" id="nome" maxlength="30" minlength="1"
+                    placeholder="Escreva aqui seu nome..."></input>
+                <label for="email">Email</label>
+                <input type="email" id="email"></input>
+                <label for="mensagem"> mensagem </label>
+                <textarea id="mensagem" placeholder="Digite sua mensagem!"></textarea>
+                <button id="envio" type="button">submit</button>
+            </div>
+        </form>
+    </div>
+    </main>
+
+
+
+
+
+   
+    <script>
+        var msg = document.getElementById("envio")
+        msg.addEventListener("click", clicar)
+        function clicar() {
+            var email = document.getElementById("email")
+            var textinho = document.getElementById("mensagem")
+            if (email.value == "") {
+                window.alert("O campo EMAIL precisa ser preenchido.")
+
+            }
+            else if (textinho.value == "") {
+                window.alert("Não tem nenhuma mensagem...")
+
+            }
+            else {
+                window.alert("Mensagem enviada!!!")
+            }
+        }
+
+
+
+
+    </script>
+         <footer>2024/1 | Análise e Desenvolvimento de Sistemas : Vitória Aparecida dos Santos </footer>
+</body>
+
+</html>
