@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="trabalho.css" rel="stylesheet" />
+    <link href="gerador.css" rel="stylesheet" />
+</head>
+
+<body class="um dois">
+    <header>
+        <div class="logo">
+            < Vitória />
+        </div>
+        <div class="frase">
+            Aspirante a desenvolvedora!
+        </div>
+        <nav>
+            <ul>
+                <div><a class="voltar" href="./index.html">🠔</a></div>
+                <li><a href="https://github.com/devVitoria">
+                        <img src="imgstrabalho/icongit.svg"> </li></a>
+                <li><a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-193962312/">
+                        <img src="imgstrabalho/iconkink.svg"> </li></a>
+
+            </ul>
+        </nav>
+    </header>
+    <div class="separador">_</div>
+
+    <main>
+        <h1>Quem sou eu?</h1>
+        <p>Meu nome é Vitória Apareida dos Santos, tenho 19 anos e sou nascida e criada em Passo Fundo, Rio Grande do
+            Sul,
+            Brasil. <br>
+
+
+            Nesses meu tempo de vida, nunca tive tão claro o que gostaria de ser, enquanto meus colegas tinham seus
+            objetivos em mente, eu ficava inventando algo diferente a cada vez que alguém perguntava
+            <br>
+
+            Era dificil lidar com a incerteza do que vinha pós ensino médio, ainda mais com o ENEM, estava fazendo o
+            vestibular, mas pra quê exatamente?
+            Era complicado, mas agora que entrei na faculdade, percebi que nada mudou, continua complicado, a diferença
+            é que meu leque de opções se limita a minha área, mas quem diria que essa dúvida permaneceria bem quando
+            imaginei me livrar dela? No entanto, tenho uma vaga ideia baseada no que mais gostei até agora (1° semestre,
+            opiniões totalmente mutáveis a longo prazo ): a parte do Backend, espero continuar gostando com o passar dos
+            semestres.
+        </p>
+
+        <h1>Por que escolhi fazer Análise e Desenvolvimento de Sistemas?</h1>
+        <p>Em um primeiro momento, tudo partiu de uma curiosidade, nunca tinha imaginado seguir em um ramo como esse.
+            Então vieram os incentivos de quem já estava na área, todos com o mesmo papo: "é divertido", "você sempre
+            vai
+            ter coisa pra aprender, nunca vai estagnar",
+            <br>
+            "é divertido", eles disseram, alguns meses depois estava eu chorando por não entender como centralizar uma
+            div, coisas da vida. <br>
+
+
+            Mas enfim, depois de tantos comentários e um pequeno interesse prévio, acabei cedendo e me matriculei no
+            curso. <br>
+
+
+            Por enquanto não me arrependi
+        </p>
+        <h1>Fato curioso</h1>
+        <p>Amo gatinhos</p>
+        <div class="gerador">
+            <figure>
+        <img  src="imagensgatinho/gato1.jpg" alt="fotos de gatinhos" id="fotogato">
+    </figure>
+        <button type="button" class="btn btn-warning" id="gato" >Gere um gatinho!!!!</button>
+    </div>
+    </main>
+
+    <script>
+        let fotocat = document.getElementById('fotogato')
+        let gatinho = document.getElementById("gato")
+        let imagens = ["imagensgatinho/gato1.jpg","imagensgatinho/gato2.avif","imagensgatinho/gato3.jpg","imagensgatinho/gato4.jpg","imagensgatinho/gato5.jpg","imagensgatinho/gato6.jpg","imagensgatinho/gato7.jpeg","imagensgatinho/gato8.jpg" ]
+        let iamgematual = 0
+        function geragatinho() {
+            iamgematual = (iamgematual + 1)
+            if (iamgematual == 8) {
+                iamgematual = 0
+            
+            }
+            console.log('gatinho gerado')
+            fotocat.src = imagens[iamgematual]
+        }
+        gatinho.addEventListener("click", geragatinho)
+    </script>
+    <br>
+    <br>
+
+    <footer> 2024/1 | Análise e Desenvolvimento de Sistemas : Vitória Aparecida dos Santos
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.dois{
+    height: 100vh;
+    flex-direction: column;
+    height: 100%;
+
+
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+p{
+    font-size: 20px;
+    color:white;
+}
+figure{
+    margin: 0;
+    display: flex;
+    max-width: 100%;
+    overflow: hidden;
+
+}
+img .fotogato{
+    display: block;
+    height: auto;
+    max-width: 100%;
+
+}
+
+button{
+    background-color: rgb(148, 148, 128);
+    border: solid 2px beige;
+    height: auto;
+}

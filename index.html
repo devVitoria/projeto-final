@@ -11,12 +11,21 @@
 <body class="um">
 
     <header>
-     
-        <div class="logo"> < Vitória /> </div>
-    
+
+        <div class="logo">
+            < Vitória />
+        </div>
+        <div class="frase">
+            Aspirante a desenvolvedora!
+        </div>
         <nav>
             <ul>
                 <li><a href="./contateme.html">contato</li></a>
+                <li><a href="https://github.com/devVitoria">
+                        <img src="imgstrabalho/icongit.svg"> </li></a>
+                <li><a href="https://www.linkedin.com/in/vit%C3%B3ria-santos-193962312/">
+                        <img src="imgstrabalho/iconkink.svg"> </li></a>
+
             </ul>
         </nav>
     </header>
@@ -29,20 +38,23 @@
 
                 <div class="sobremim">
                     <h1>Olá!</h1><br><br>
-                    <p>Me chamo Vitória e estou cursando o primeiro semestre de ADS na Universidade de Passo Fundo. <br><br>
+                    <p>Me chamo Vitória e estou cursando o primeiro semestre de ADS na Universidade de Passo Fundo.
+                        <br><br>
                         Esse projeto é em função do trabalho conclusivo
                         da disciplina de Desenvolvivemnto para Web, ministrada pelo professor Diego Lusa.<br><br>
-
+                        <div  class="gatinhos"><a href="gerador.html"><h1>Mais sobre mim!</h1></div></a>
                     </p>
                 </div>
                 <div class="ajuste">
                     <div class="minhafoto">
-                        <figure><img src="imgstrabalho/eupicture.jpg" alt="Foto da autora do portfolio, Vitória">
+                        <figure><img id="imagem" src="imgstrabalho/eupicture.jpeg"
+                                alt="Foto da autora do portfolio, Vitória">
                         </figure>
                     </div>
 
                     <div class="sobremim2">
-                        <p>Este, apesar de simples, já é um grande projeto para mim. Ele pode não ser a coisa mais linda (ou
+                        <p>Este, apesar de simples, já é um grande projeto para mim. Ele pode não ser a coisa mais linda
+                            (ou
                             funcional) do mundo, mas todos tem um começo, não é?
                         </p>
 
@@ -100,10 +112,26 @@
         </div>
         <section class="projeto">
             <h1>Projetos</h1>
-            <a href="TrabTabelasVitoria/tabelaaula.html" >clicar</a>
+            <div class="generica">
+                <a href="tabelaaula.html">Página estática com informações de compra de mangás</a>
+            </div>
 
         </section>
+        <div class="separador">_</div>
     </main>
+    <script>
+        let troca = document.getElementById("imagem")
+        let fotos = ["imgstrabalho/eupicture.jpeg", "imgstrabalho/luis.jpg"]
+        let fotoatual = 0
+        function trocafoto() {
+            fotoatual = (fotoatual + 1)
+            if (fotoatual == 2) {
+                fotoatual = 0
+            }
+            troca.src = fotos[fotoatual]
+        }
+        troca.addEventListener("click", trocafoto)
+    </script>
     <footer>2024/1 | Análise e Desenvolvimento de Sistemas : Vitória Aparecida dos Santos </footer>
 
 </body>
